@@ -1,0 +1,16 @@
+spring:
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+
+internal:
+  config:
+    api:
+      weather:
+        baseURL: https://api.openweathermap.org/data/
+        version: 2.5
+        currentWeatherPath: /weather
+        appID: ${WEATHER_MAP_API_APP_ID:NO_SET}
+      zutool:
+        baseURL: https://zutool.jp
